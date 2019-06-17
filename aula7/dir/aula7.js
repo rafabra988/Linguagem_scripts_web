@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var batman_1 = require("./batman");
+var homemMorcego = new batman_1.Batman();
+homemMorcego.setCodenome('Batman');
+homemMorcego.setIdsecreta('Bruce Wayme');
+homemMorcego.setPericia('ser FODAO');
+homemMorcego.setPoder(8000);
+homemMorcego.setSuperPoder('ser rico e ter medo de morcegos');
+console.log("o nome do heroi \u00E9: " + homemMorcego.getCodenome() + ", e sua identidade secreta \u00E9: " + homemMorcego.getIdsecreta() + ", " + homemMorcego.getPericia() + ", seu poder \u00E9 mais de: " + homemMorcego.getPoder() + ", seu(s) superpoder(es) \u00E9(s\u00E3o): " + homemMorcego.getSuperPoder() + ", seu arqui rival \u00E9: " + homemMorcego.getArqueRival() + ", sua fraqueza \u00E9 " + homemMorcego.getFraqueza());

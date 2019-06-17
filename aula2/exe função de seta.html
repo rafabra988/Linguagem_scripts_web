@@ -1,0 +1,25 @@
+<img id="exercicio" onmouseover="acender()" onclick="quebrar()" onmouseout="trocarlap()" src="http://ikesushi.com.br/_imagens/lampada-apagada.jpg">
+
+<script>
+    document.getElementById("exercicio").addEventListener("click", (lampada) => {
+        lampada.src = "http://ikesushi.com.br/_imagens/lampada-quebrada.jpg";
+    });
+
+    document.getElementById("exercicio").addEventListener("mouseout", (lampada) => {
+        lampada.src = "http://ikesushi.com.br/_imagens/lampada-apagada.jpg";
+    });
+
+    document.getElementById("exercicio").addEventListener("mouseover", (lampada) => {
+        lampada.src = "http://ikesushi.com.br/_imagens/lampada-acesa.jpg";
+    });
+</script>
+
+<style>
+    img {
+        margin-left: 35%;
+        margin-top: 10%;
+        width: 400px;
+        height: 500px;
+        border: none;
+    }
+</style>

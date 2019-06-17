@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<fieldset>
+    <legend>Dados funcionarios</legend>
+    <form>
+        <div class="form-group">
+            <label for="idnome">Nome</label>
+            <input class="form-control" type="text" name="nome" id="idnome">
+        </div>
+        <div class="form-group">
+            <label for="idemail">Email</label>
+            <input class="form-control" type="email" name="email" id="idemail">
+        </div>
+        <div class="form-group">
+            <label for="idtelefone">Telefone</label>
+            <input class="form-control" type="telefone" name="telefone" id="idtelefone">
+        </div>
+        <div class="form-group">
+            <label for="idsalario">Salário</label>
+            <input class="form-control" type="text" name="salario" id="idsalario">
+        </div>
+        <div>
+            <button class="btn btn-dark">Enviar</button>
+        </div>
+    </form>
+</fieldset>
+
+<script>
+    var btn = document.getElementById('idsalario');
+    btn.onmouseleave = () => {
+        let salario = document.getElementsByName("salario")[0];
+        const formatado = parseFloat(salario.value).toLocaleString('pt-BR', {style: 'currency',currency: 'BRL'});
+        salario.value = formatado;
+    };
+
+
+</script>
+<style>
+    fieldset {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10%;
+        padding: 3%;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+</style>

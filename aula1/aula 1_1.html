@@ -1,0 +1,56 @@
+<p id="tag1" onclick="quandoClicar()" onmousewheel="quandoRodarScroll()">
+
+    Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta
+    Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um
+    bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão
+    é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta
+    Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um
+    bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão
+    é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta
+    Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um
+    bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão
+    é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta
+    Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta Jão é um bosta
+
+
+</p>
+
+
+<script>
+    /*var tag = document.getElementsByTagName("p")[0];
+            tag.style.color = "red";
+            tag.style.fontSize ="200px";
+            console.log(tag);
+
+            function pageScroll() {
+                window.scrollBy(0,2);
+                scrolldelay = setTimeout(pageScroll,1);
+
+            }*/
+
+
+    var tag = document.getElementById("tag1")
+
+    function quandoClicar() {
+        if (tag.style.fontStyle == "normal") {
+            tag.style.fontStyle = "italic";
+        } else {
+            tag.style.fontStyle = "normal";
+        }
+        /*tag.style.color = "red";
+        tag.style.fontStyle = "italic";
+        tag.style.fontSize ="200px";*/
+
+    }
+
+    function quandoRodarScroll() {
+        let color = tag.style.color;
+        if (color != "red") {
+            tag.style.color = "red";
+        } else {
+            tag.style.color = "green";
+        }
+    }
+
+    pageScroll();
+</script>
